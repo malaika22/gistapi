@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout should match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-fFGjHI dISJgE"
+  >
+    <span
+      class="mega-octicon octicon-mark-github"
+    />
+    <div
+      class="sc-bgqQcB ighHLN"
+    >
+      <div
+        class="sc-gTRrQi cLuoSN"
+      >
+        <span
+          class="octicon octicon-search"
+        />
+        <input
+          class="sc-ewnqHT eQrKCi"
+          placeholder="Search Gists for the username"
+          value=""
+        />
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
