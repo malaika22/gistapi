@@ -1,16 +1,21 @@
-
-import styled from 'styled-components'
-import Header from "./components/Header";
-import GlobalStyles from "./GlobalStyle";
+import styled from 'styled-components';
+import GlobalStyles from './GlobalStyle';
+import { FeedPage } from 'pages/FeedPage';
+import { GistProvider } from 'context/GistContext';
+import { Layout } from 'components';
 
 const App = () => {
   return (
-    <Wrapper className="App" data-testid="app">
-      <Header />
-      <GlobalStyles />
-    </Wrapper>
+    <GistProvider>
+      <Wrapper className="App" data-testid="app">
+        <Layout>
+          <FeedPage />
+          <GlobalStyles />
+        </Layout>
+      </Wrapper>
+    </GistProvider>
   );
-}
+};
 
 const Wrapper = styled.div`
   font-size: 14px;
